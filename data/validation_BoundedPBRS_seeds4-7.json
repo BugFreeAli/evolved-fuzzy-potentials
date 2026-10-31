@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "BoundedPBRS": {
+      "method_type": "bounded_pbrs",
+      "per_seed_success_rate": [
+        0.3,
+        0.28,
+        0.4,
+        0.18
+      ],
+      "mean_success_rate": 0.29000000000000004,
+      "raw": [
+        {
+          "label": "BoundedPBRS",
+          "seed": 4,
+          "successes": 15,
+          "n_eval_episodes": 50,
+          "success_rate": 0.3,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "cdc1faf60ac499c1"
+        },
+        {
+          "label": "BoundedPBRS",
+          "seed": 5,
+          "successes": 14,
+          "n_eval_episodes": 50,
+          "success_rate": 0.28,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "50ddd879124fe2a4"
+        },
+        {
+          "label": "BoundedPBRS",
+          "seed": 6,
+          "successes": 20,
+          "n_eval_episodes": 50,
+          "success_rate": 0.4,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "f7f3aafb318f209c"
+        },
+        {
+          "label": "BoundedPBRS",
+          "seed": 7,
+          "successes": 9,
+          "n_eval_episodes": 50,
+          "success_rate": 0.18,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "6fce715c00269d09"
+        }
+      ]
+    }
+  }
+}

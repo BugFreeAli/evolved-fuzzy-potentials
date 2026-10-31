@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "LinearAdd": {
+      "method_type": "classical_raw",
+      "per_seed_success_rate": [
+        0.24,
+        0.04,
+        0.22,
+        0.44
+      ],
+      "mean_success_rate": 0.235,
+      "raw": [
+        {
+          "label": "LinearAdd",
+          "seed": 4,
+          "successes": 12,
+          "n_eval_episodes": 50,
+          "success_rate": 0.24,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "74bf707fff22e755"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 5,
+          "successes": 2,
+          "n_eval_episodes": 50,
+          "success_rate": 0.04,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "1253e10e0854a183"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 6,
+          "successes": 11,
+          "n_eval_episodes": 50,
+          "success_rate": 0.22,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "63ab5453f3ce8013"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 7,
+          "successes": 22,
+          "n_eval_episodes": 50,
+          "success_rate": 0.44,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "cccf815ff946989f"
+        }
+      ]
+    }
+  }
+}

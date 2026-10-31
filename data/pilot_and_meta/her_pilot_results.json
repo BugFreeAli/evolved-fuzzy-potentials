@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "current": {
+      "per_seed_success_rate": [
+        0.04,
+        0.08,
+        0.08
+      ],
+      "mean_success_rate": 0.06666666666666667,
+      "raw": [
+        {
+          "condition": "current",
+          "seed": 0,
+          "successes": 2,
+          "n_eval_episodes": 50,
+          "success_rate": 0.04
+        },
+        {
+          "condition": "current",
+          "seed": 1,
+          "successes": 4,
+          "n_eval_episodes": 50,
+          "success_rate": 0.08
+        },
+        {
+          "condition": "current",
+          "seed": 2,
+          "successes": 4,
+          "n_eval_episodes": 50,
+          "success_rate": 0.08
+        }
+      ]
+    },
+    "her_only": {
+      "per_seed_success_rate": [
+        0.06,
+        0.04,
+        0.08
+      ],
+      "mean_success_rate": 0.06,
+      "raw": [
+        {
+          "condition": "her_only",
+          "seed": 0,
+          "successes": 3,
+          "n_eval_episodes": 50,
+          "success_rate": 0.06
+        },
+        {
+          "condition": "her_only",
+          "seed": 1,
+          "successes": 2,
+          "n_eval_episodes": 50,
+          "success_rate": 0.04
+        },
+        {
+          "condition": "her_only",
+          "seed": 2,
+          "successes": 4,
+          "n_eval_episodes": 50,
+          "success_rate": 0.08
+        }
+      ]
+    },
+    "her_tuned": {
+      "per_seed_success_rate": [
+        0.32,
+        0.2,
+        0.32
+      ],
+      "mean_success_rate": 0.28,
+      "raw": [
+        {
+          "condition": "her_tuned",
+          "seed": 0,
+          "successes": 16,
+          "n_eval_episodes": 50,
+          "success_rate": 0.32
+        },
+        {
+          "condition": "her_tuned",
+          "seed": 1,
+          "successes": 10,
+          "n_eval_episodes": 50,
+          "success_rate": 0.2
+        },
+        {
+          "condition": "her_tuned",
+          "seed": 2,
+          "successes": 16,
+          "n_eval_episodes": 50,
+          "success_rate": 0.32
+        }
+      ]
+    }
+  }
+}

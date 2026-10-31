@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "Ours_her_search_raw1": {
+      "method_type": "evolved_raw",
+      "per_seed_success_rate": [
+        0.28,
+        0.32,
+        0.04,
+        0.36
+      ],
+      "mean_success_rate": 0.25,
+      "raw": [
+        {
+          "label": "Ours_her_search_raw1",
+          "seed": 0,
+          "successes": 14,
+          "n_eval_episodes": 50,
+          "success_rate": 0.28,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "e06a1400b267a336"
+        },
+        {
+          "label": "Ours_her_search_raw1",
+          "seed": 1,
+          "successes": 16,
+          "n_eval_episodes": 50,
+          "success_rate": 0.32,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "ae2c7661f1ed5644"
+        },
+        {
+          "label": "Ours_her_search_raw1",
+          "seed": 2,
+          "successes": 2,
+          "n_eval_episodes": 50,
+          "success_rate": 0.04,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "a0972d7edcc9486b"
+        },
+        {
+          "label": "Ours_her_search_raw1",
+          "seed": 3,
+          "successes": 18,
+          "n_eval_episodes": 50,
+          "success_rate": 0.36,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "f51de6952000c80f"
+        }
+      ]
+    }
+  }
+}

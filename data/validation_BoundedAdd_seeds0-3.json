@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "BoundedAdd": {
+      "method_type": "bounded_raw",
+      "per_seed_success_rate": [
+        0.3,
+        0.34,
+        0.38,
+        0.3
+      ],
+      "mean_success_rate": 0.33,
+      "raw": [
+        {
+          "label": "BoundedAdd",
+          "seed": 0,
+          "successes": 15,
+          "n_eval_episodes": 50,
+          "success_rate": 0.3,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "4bca5d9185a59241"
+        },
+        {
+          "label": "BoundedAdd",
+          "seed": 1,
+          "successes": 17,
+          "n_eval_episodes": 50,
+          "success_rate": 0.34,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "28a0c78629f1563f"
+        },
+        {
+          "label": "BoundedAdd",
+          "seed": 2,
+          "successes": 19,
+          "n_eval_episodes": 50,
+          "success_rate": 0.38,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "d1ae91357a3db39d"
+        },
+        {
+          "label": "BoundedAdd",
+          "seed": 3,
+          "successes": 15,
+          "n_eval_episodes": 50,
+          "success_rate": 0.3,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "0fbdcac71f3a0198"
+        }
+      ]
+    }
+  }
+}

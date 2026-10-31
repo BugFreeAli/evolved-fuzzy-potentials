@@ -1,0 +1,23 @@
+36 pairs. Bonferroni threshold 0.05/36 = 0.00139
+
+pair          scipy-exact  tie-aware-exact  tie-corrected-normal
+B0      -B2a         0.00186         0.00124              0.00312
+B0      -C1          0.00186         0.00171              0.00310
+B1      -B2a         0.00591         0.00404              0.00766
+B1      -C1          0.00591         0.00404              0.00745
+B2b     -C1          0.02067         0.01570              0.02030
+B2a     -B2b         0.02067         0.01709              0.02049
+B0      -C3          0.03792         0.03419              0.03866
+B0      -C2          0.04988         0.04413              0.04997
+B0      -Ours-S1     0.07211         0.06014              0.06242
+B0      -B2b         0.08298         0.06698              0.07144
+
+Holm (tie-aware exact):
+  step 1: p = 0.00124, threshold 0.00139 -> reject
+  step 2: p = 0.00171, threshold 0.00143 -> stop
+
+pairs where tie-aware p > scipy-exact p: 0 of 36
+first six methods (15 pairs), Bonferroni 0.05/15 = 0.00333:
+  B0-B2a: scipy-exact 0.00186, tie-aware 0.00124
+  B1-B2a: scipy-exact 0.00591, tie-aware 0.00404
+  B2a-B2b: scipy-exact 0.02067, tie-aware 0.01709

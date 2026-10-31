@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "B2a": {
+      "method_type": "handcrafted_raw",
+      "per_seed_success_rate": [
+        0.46,
+        0.34,
+        0.42,
+        0.22
+      ],
+      "mean_success_rate": 0.36,
+      "raw": [
+        {
+          "label": "B2a",
+          "seed": 0,
+          "successes": 23,
+          "n_eval_episodes": 50,
+          "success_rate": 0.46
+        },
+        {
+          "label": "B2a",
+          "seed": 1,
+          "successes": 17,
+          "n_eval_episodes": 50,
+          "success_rate": 0.34
+        },
+        {
+          "label": "B2a",
+          "seed": 2,
+          "successes": 21,
+          "n_eval_episodes": 50,
+          "success_rate": 0.42
+        },
+        {
+          "label": "B2a",
+          "seed": 3,
+          "successes": 11,
+          "n_eval_episodes": 50,
+          "success_rate": 0.22
+        }
+      ]
+    }
+  }
+}

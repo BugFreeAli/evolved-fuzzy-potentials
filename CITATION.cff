@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "evolved-fuzzy-potentials"
+authors:
+  - family-names: Gondal
+    given-names: Ali Akbar
+  - family-names: Jan
+    given-names: Naeem
+repository-code: "https://github.com/BugFreeAli/evolved-fuzzy-potentials"
+license: MIT

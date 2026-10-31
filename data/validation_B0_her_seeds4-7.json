@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "B0": {
+      "method_type": "none",
+      "per_seed_success_rate": [
+        0.24,
+        0.16,
+        0.24,
+        0.24
+      ],
+      "mean_success_rate": 0.22,
+      "raw": [
+        {
+          "label": "B0",
+          "seed": 4,
+          "successes": 12,
+          "n_eval_episodes": 50,
+          "success_rate": 0.24
+        },
+        {
+          "label": "B0",
+          "seed": 5,
+          "successes": 8,
+          "n_eval_episodes": 50,
+          "success_rate": 0.16
+        },
+        {
+          "label": "B0",
+          "seed": 6,
+          "successes": 12,
+          "n_eval_episodes": 50,
+          "success_rate": 0.24
+        },
+        {
+          "label": "B0",
+          "seed": 7,
+          "successes": 12,
+          "n_eval_episodes": 50,
+          "success_rate": 0.24
+        }
+      ]
+    }
+  }
+}

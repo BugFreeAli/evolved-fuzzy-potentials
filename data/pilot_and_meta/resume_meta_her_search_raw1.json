@@ -1,0 +1,10 @@
+{
+  "env_id": "PandaPush-v3",
+  "training_budget": 20000,
+  "n_eval_episodes": 15,
+  "eval_seed_offset": 2000,
+  "seed_base": 60000,
+  "init": "hand-crafted",
+  "potential_mode": "evolved_raw",
+  "popsize": 4
+}

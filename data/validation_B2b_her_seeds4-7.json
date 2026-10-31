@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "B2b": {
+      "method_type": "handcrafted_pbrs",
+      "per_seed_success_rate": [
+        0.2,
+        0.22,
+        0.28,
+        0.18
+      ],
+      "mean_success_rate": 0.22000000000000003,
+      "raw": [
+        {
+          "label": "B2b",
+          "seed": 4,
+          "successes": 10,
+          "n_eval_episodes": 50,
+          "success_rate": 0.2
+        },
+        {
+          "label": "B2b",
+          "seed": 5,
+          "successes": 11,
+          "n_eval_episodes": 50,
+          "success_rate": 0.22
+        },
+        {
+          "label": "B2b",
+          "seed": 6,
+          "successes": 14,
+          "n_eval_episodes": 50,
+          "success_rate": 0.28
+        },
+        {
+          "label": "B2b",
+          "seed": 7,
+          "successes": 9,
+          "n_eval_episodes": 50,
+          "success_rate": 0.18
+        }
+      ]
+    }
+  }
+}

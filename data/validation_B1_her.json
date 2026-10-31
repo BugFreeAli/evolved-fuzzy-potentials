@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "B1": {
+      "method_type": "classical_pbrs",
+      "per_seed_success_rate": [
+        0.2,
+        0.22,
+        0.14
+      ],
+      "mean_success_rate": 0.18666666666666668,
+      "raw": [
+        {
+          "label": "B1",
+          "seed": 0,
+          "successes": 10,
+          "n_eval_episodes": 50,
+          "success_rate": 0.2
+        },
+        {
+          "label": "B1",
+          "seed": 1,
+          "successes": 11,
+          "n_eval_episodes": 50,
+          "success_rate": 0.22
+        },
+        {
+          "label": "B1",
+          "seed": 2,
+          "successes": 7,
+          "n_eval_episodes": 50,
+          "success_rate": 0.14
+        }
+      ]
+    }
+  }
+}

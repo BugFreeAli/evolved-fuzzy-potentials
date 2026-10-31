@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "OursRaw": {
+      "method_type": "evolved_raw",
+      "per_seed_success_rate": [
+        0.22,
+        0.36
+      ],
+      "mean_success_rate": 0.29,
+      "raw": [
+        {
+          "label": "OursRaw",
+          "seed": 5,
+          "successes": 11,
+          "n_eval_episodes": 50,
+          "success_rate": 0.22
+        },
+        {
+          "label": "OursRaw",
+          "seed": 6,
+          "successes": 18,
+          "n_eval_episodes": 50,
+          "success_rate": 0.36
+        }
+      ]
+    }
+  }
+}

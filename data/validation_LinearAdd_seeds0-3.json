@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "LinearAdd": {
+      "method_type": "classical_raw",
+      "per_seed_success_rate": [
+        0.26,
+        0.36,
+        0.28,
+        0.4
+      ],
+      "mean_success_rate": 0.325,
+      "raw": [
+        {
+          "label": "LinearAdd",
+          "seed": 0,
+          "successes": 13,
+          "n_eval_episodes": 50,
+          "success_rate": 0.26,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "7c0fe8189f4ca5f7"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 1,
+          "successes": 18,
+          "n_eval_episodes": 50,
+          "success_rate": 0.36,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "0a52a0d52e03263e"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 2,
+          "successes": 14,
+          "n_eval_episodes": 50,
+          "success_rate": 0.28,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "25b446cb1211ab24"
+        },
+        {
+          "label": "LinearAdd",
+          "seed": 3,
+          "successes": 20,
+          "n_eval_episodes": 50,
+          "success_rate": 0.4,
+          "final_num_timesteps": 50000,
+          "n_resumes": 0,
+          "resume_steps": [],
+          "fingerprint": "4bfe9409efe867d7"
+        }
+      ]
+    }
+  }
+}

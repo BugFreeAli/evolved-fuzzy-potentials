@@ -1,0 +1,118 @@
+method   n  mean    sd  median  boot95CI (half up)  per-seed
+B0       8  19.75   4.5  21.0  [16.8, 22.5]  [20, 14, 22, 14, 24, 16, 24, 24]
+B1       7  22.00   5.3  22.0  [18.6, 25.7]  [20, 22, 14, 18, 30, 26, 24]
+B2a      8  36.25   8.0  38.0  [30.8, 41.0]  [46, 34, 42, 22, 28, 36, 40, 42]
+B2b      8  25.50   5.8  25.0  [22.0, 29.5]  [30, 36, 24, 26, 20, 22, 28, 18]
+Ours-S1  7  27.43  11.5  30.0  [18.9, 34.0]  [30, 32, 38, 30, 4, 22, 36]
+Ours-S2  4  25.00  14.4  30.0  [11.0, 34.0]  [28, 32, 4, 36]
+C1       8  34.75   7.2  36.0  [30.0, 39.3]  [30, 34, 38, 30, 42, 44, 22, 38]
+C2       8  28.00  12.5  27.0  [19.5, 35.5]  [26, 36, 28, 40, 24, 4, 22, 44]
+C3       8  28.00   8.6  29.0  [22.5, 33.5]  [16, 30, 38, 24, 30, 28, 40, 18]
+
+pairwise exact two-sided Mann-Whitney U, first six methods (15 tests)
+B0       vs B1       p = 0.5358
+B0       vs B2a      p = 0.0019
+B0       vs B2b      p = 0.0830
+B0       vs Ours-S1  p = 0.0721
+B0       vs Ours-S2  p = 0.2141
+B1       vs B2a      p = 0.0059
+B1       vs B2b      p = 0.3357
+B1       vs Ours-S1  p = 0.1282
+B1       vs Ours-S2  p = 0.3152
+B2a      vs B2b      p = 0.0207
+B2a      vs Ours-S1  p = 0.1206
+B2a      vs Ours-S2  p = 0.1535
+B2b      vs Ours-S1  p = 0.2810
+B2b      vs Ours-S2  p = 0.5697
+Ours-S1  vs Ours-S2  p = 0.9273
+
+Kruskal-Wallis over six methods: KruskalResult(statistic=np.float64(15.708625273739651), pvalue=np.float64(0.007727123002244773))
+
+pooled evolved n=11 mean=26.55 median=30.0
+  evolved vs B0: p = 0.0506  (mean difference +6.80)
+  evolved vs B1: p = 0.1042  (mean difference +4.55)
+  evolved vs B2a: p = 0.0620  (mean difference -9.70)
+  evolved vs B2b: p = 0.2723  (mean difference +1.05)
+  evolved vs C1: p = 0.1288  (mean difference -8.20)
+  evolved vs C2: p = 1.0000  (mean difference -1.45)
+  evolved vs C3: p = 0.9039  (mean difference -1.45)
+first-stage exploratory contrast: fuzzy-shaped n=27 mean=29.11 vs references n=15 mean=20.80: p = 0.0010
+hand-crafted only n=16 mean=30.88: p = 0.0015
+seeds at 4%: evolved 2/11, others 0/31 (min of others = 14); Fisher p = 0.0639
+B2a - B2b = 10.75 points; Bonferroni threshold for 15 tests = 0.0033
+
+Holm step-down over the 15 pairwise tests of the first six methods (alpha = 0.05):
+  B0 vs B2a: p = 0.0019, Holm threshold 0.0033 -> reject
+  B1 vs B2a: p = 0.0059, Holm threshold 0.0036 -> stop
+
+reference seeds: n=15, max=30; B2a seeds above that max: [34, 36, 40, 42, 42, 46], others: [22, 28]
+pilot recipe (32,20,32) vs corrected B0: 0.194
+
+================ nine methods ================
+B0       vs B2a      p = 0.00186
+B0       vs C1       p = 0.00186
+B1       vs B2a      p = 0.00591
+B1       vs C1       p = 0.00591
+B2a      vs B2b      p = 0.02067
+B2b      vs C1       p = 0.02067
+B0       vs C3       p = 0.03792
+B0       vs C2       p = 0.04988
+B0       vs Ours-S1  p = 0.07211
+B0       vs B2b      p = 0.08298
+B2a      vs C3       p = 0.08298
+B2a      vs Ours-S1  p = 0.12059
+... 36 tests; Bonferroni threshold 0.05/36 = 0.00139; smallest p = 0.00186
+  Holm step 1: B0 vs B2a: p = 0.00186, threshold 0.00139 -> stop
+Kruskal-Wallis over nine methods: KruskalResult(statistic=np.float64(21.94799655957455), pvalue=np.float64(0.005013119853221862))
+p-values below 0.05 among the 36: [(0.0019, 'B0', 'B2a'), (0.0019, 'B0', 'C1'), (0.0059, 'B1', 'B2a'), (0.0059, 'B1', 'C1'), (0.0207, 'B2a', 'B2b'), (0.0207, 'B2b', 'C1'), (0.0379, 'B0', 'C3'), (0.0499, 'B0', 'C2')]
+
+--- pre-specified comparisons (written down before the runs) ---
+C1 vs B2a (primary):  p = 0.7209, mean difference -1.50
+C1 vs B0 (secondary): p = 0.0019, mean difference +15.00
+C1 vs B1 (secondary): p = 0.0059, mean difference +12.75
+C1 vs B2b (secondary): p = 0.0207, mean difference +9.25
+C3 vs C1 (primary):   p = 0.1304, mean difference -6.75
+C3 vs B2b (secondary): p = 0.5737, mean difference +2.50
+C3 vs B1 (secondary): p = 0.1893, mean difference +6.00
+C3 vs B0 (secondary): p = 0.0379, mean difference +8.25
+
+--- C2 (comparisons chosen after the data were seen) ---
+C2 vs B1: p = 0.1893, mean difference +6.00
+C2 vs C1: p = 0.2786, mean difference -6.75
+C2 vs B0: p = 0.0499, mean difference +8.25
+C2 vs B2a: p = 0.1949, mean difference -8.25
+C2 vs B2b: p = 0.5054, mean difference +2.50
+C2 vs C3: p = 1.0000, mean difference +0.00
+
+--- design grid: means (PBRS | additive) and form effect ---
+linear   PBRS B1: 22.00  additive C2: 28.00  form effect +6.00  p = 0.1893
+bounded  PBRS C3: 28.00  additive C1: 34.75  form effect +6.75  p = 0.1304
+fuzzy    PBRS B2b: 25.50  additive B2a: 36.25  form effect +10.75  p = 0.0207
+PBRS     linear 22.00  bounded 28.00  fuzzy 25.50  bounded-linear +6.00 (p = 0.1893)  fuzzy-linear +3.50 (p = 0.3357)  fuzzy-bounded -2.50 (p = 0.5737)
+additive linear 28.00  bounded 34.75  fuzzy 36.25  bounded-linear +6.75 (p = 0.2786)  fuzzy-linear +8.25 (p = 0.1949)  fuzzy-bounded +1.50 (p = 0.7209)
+
+--- stratified contrasts (POST HOC; Monte-Carlo permutation within strata, 200000 draws, seed 12345; bootstrap CI 10000, seed 0) ---
+form (additive $-$ PBRS), 3 shapes: +7.83 points, 95% CI [3.5, 12.2], p = 0.0023
+bounded $-$ linear, 2 forms: +6.38 points, 95% CI [0.8, 12.1], p = 0.0490
+fuzzy $-$ bounded, 2 forms: -0.50 points, 95% CI [-5.4, 4.4], p = 0.8870
+fuzzy $-$ linear, 2 forms: +5.88 points, 95% CI [0.4, 11.3], p = 0.0558
+bounded or fuzzy $-$ linear, 2 forms: +6.12 points, 95% CI [1.2, 11.3], p = 0.0177
+
+--- the first-stage exploratory grouping, re-tested with the controls ---
+fuzzy-shaped (B2a, B2b, S1, S2) n=27 mean=29.11  vs non-fuzzy shaped (B1, C1, C2, C3) n=31 mean=28.39: p = 0.6314
+hand-crafted fuzzy (B2a, B2b) n=16 mean=30.88 vs non-fuzzy shaped: p = 0.5118
+number of seeds: fuzzy-shaped additive 19 of 27
+
+--- seeds that collapsed (<= 4%) ---
+B0       lowest seed 14%, seeds at or below 4%: 0
+B1       lowest seed 14%, seeds at or below 4%: 0
+B2a      lowest seed 22%, seeds at or below 4%: 0
+B2b      lowest seed 18%, seeds at or below 4%: 0
+Ours-S1  lowest seed  4%, seeds at or below 4%: 1
+Ours-S2  lowest seed  4%, seeds at or below 4%: 1
+C1       lowest seed 22%, seeds at or below 4%: 0
+C2       lowest seed  4%, seeds at or below 4%: 1
+C3       lowest seed 16%, seeds at or below 4%: 0
+all nine methods: 66 seeds, 3 at 4%; lowest of the others = 14
+
+mean rounding check (half up): {'B0': '19.8', 'B1': '22.0', 'B2a': '36.3', 'B2b': '25.5', 'Ours-S1': '27.4', 'Ours-S2': '25.0', 'C1': '34.8', 'C2': '28.0', 'C3': '28.0'} references: 20.8 fuzzy: 29.1 non-fuzzy shaped: 28.4

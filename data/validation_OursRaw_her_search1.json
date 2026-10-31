@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "training_steps": 50000,
+  "summary": {
+    "OursRaw": {
+      "method_type": "evolved_raw",
+      "per_seed_success_rate": [
+        0.3,
+        0.32,
+        0.38,
+        0.3,
+        0.04
+      ],
+      "mean_success_rate": 0.268,
+      "raw": [
+        {
+          "label": "OursRaw",
+          "seed": 0,
+          "successes": 15,
+          "n_eval_episodes": 50,
+          "success_rate": 0.3
+        },
+        {
+          "label": "OursRaw",
+          "seed": 1,
+          "successes": 16,
+          "n_eval_episodes": 50,
+          "success_rate": 0.32
+        },
+        {
+          "label": "OursRaw",
+          "seed": 2,
+          "successes": 19,
+          "n_eval_episodes": 50,
+          "success_rate": 0.38
+        },
+        {
+          "label": "OursRaw",
+          "seed": 3,
+          "successes": 15,
+          "n_eval_episodes": 50,
+          "success_rate": 0.3
+        },
+        {
+          "label": "OursRaw",
+          "seed": 4,
+          "successes": 2,
+          "n_eval_episodes": 50,
+          "success_rate": 0.04
+        }
+      ]
+    }
+  }
+}
