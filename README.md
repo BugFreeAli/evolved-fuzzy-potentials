@@ -1,8 +1,6 @@
 # evolved-fuzzy-potentials
 
-Code, parameter vectors, per-seed results and analysis scripts for
-
-> Gondal, A. A. and Jan, N. *Fuzzy, Bounded or Linear? A Controlled Study of Hand-Crafted and Evolved Reward-Shaping Potentials for Sparse-Reward Manipulation with Hindsight Experience Replay.* (under review)
+Code, parameter vectors, per-seed results and analysis scripts
 
 Task: PandaPush-v3 (panda-gym), Soft Actor-Critic + Hindsight Experience Replay (Stable-Baselines3).
 
